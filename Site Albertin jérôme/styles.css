@@ -1,0 +1,728 @@
+/* ==========================================================
+   DR. ROSENBERG EXACT REPLICATION
+   - Based on extracted CSS values
+   ========================================================== */
+
+/* 1) Reset & Base - Exact values */
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #111111;
+  background: #ffffff;
+  line-height: 1.6;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 2) Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  margin: 0 0 1.6rem;
+  color: #111111;
+}
+
+h1 { font-size: clamp(3.6rem, 5vw, 6.4rem); }
+h2 { font-size: clamp(2.8rem, 3.5vw, 4.8rem); }
+h3 { font-size: clamp(2.2rem, 2.5vw, 3.2rem); }
+
+p {
+  margin: 0 0 1.6rem;
+  color: #4A4A4A;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul { list-style: none; }
+
+/* 3) Skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 1.6rem;
+  top: 1.6rem;
+  width: auto;
+  height: auto;
+  padding: 1.2rem 2rem;
+  background: #111111;
+  color: white;
+  z-index: 9999;
+}
+
+/* 4) Container */
+.container {
+  width: min(1200px, calc(100% - 60px));
+  margin: 0 auto;
+  padding: 0;
+}
+
+.section {
+  padding: 8rem 0;
+}
+
+.section--soft {
+  background: #F6F5FB;
+}
+
+/* 5) Header - Transparent avec menu centré */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,0);
+  backdrop-filter: blur(0);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  transition: all 0.3s ease;
+}
+
+.header--scrolled {
+  background: rgba(255,255,255,0.98);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #DFDFDF;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 0;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.brand-text strong {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
+.header--scrolled .brand-text strong {
+  color: #111111;
+}
+
+.brand-text span {
+  display: block;
+  font-size: 1.3rem;
+  color: rgba(255,255,255,0.9);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-top: 0.4rem;
+}
+
+.header--scrolled .brand-text span {
+  color: #8F8F8F;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  position: relative;
+}
+
+.nav a {
+  padding: 1rem 1.8rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.95);
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.header--scrolled .nav a {
+  color: #4A4A4A;
+}
+
+.nav a:hover {
+  color: white;
+  background: rgba(255,255,255,0.1);
+}
+
+.header--scrolled .nav a:hover {
+  color: #111111;
+  background: rgba(0,0,0,0.05);
+}
+
+.nav a[aria-current="page"] {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.header--scrolled .nav a[aria-current="page"] {
+  color: #111111;
+  border-bottom: 2px solid #111111;
+}
+
+/* Menu déroulant */
+.nav-item {
+  position: relative;
+}
+
+.nav-item:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 22rem;
+  background: white;
+  border: 1px solid #DFDFDF;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-1rem);
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.dropdown a {
+  display: block;
+  padding: 1.2rem 2rem;
+  color: #4A4A4A;
+  border-bottom: 1px solid #DFDFDF;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-size: 1.4rem;
+}
+
+.dropdown a:last-child {
+  border-bottom: none;
+}
+
+.dropdown a:hover {
+  background: #F6F5FB;
+  color: #111111;
+}
+
+/* 6) Hero - Exact replication */
+.hero {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero:before {
+  content: "";
+  display: block;
+  background: url('https://images.unsplash.com/photo-1551190822-a9333d879b1f?q=80&w=2000') center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.kicker {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 1.6rem;
+}
+
+.hero h1 {
+  color: white;
+  font-size: clamp(4.2rem, 6vw, 7.2rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 2.4rem;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.9);
+  max-width: 60rem;
+  margin: 0 auto 3rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* 7) Hero panel - Caché */
+.hero-panel {
+  display: none;
+}
+
+/* 8) Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem 3.2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.btn--accent {
+  background: #111111;
+  color: white;
+  border-color: #111111;
+}
+.btn--accent:hover {
+  background: #4A4A4A;
+  border-color: #4A4A4A;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+.btn--ghost {
+  background: transparent;
+  border-color: rgba(255,255,255,0.5);
+  color: white;
+}
+.btn--ghost:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: white;
+}
+
+/* 9) Title wrap */
+.title-wrap {
+  max-width: 80rem;
+  margin-bottom: 6rem;
+}
+.title-wrap.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* 10) Grid */
+.grid {
+  display: grid;
+  gap: 3rem;
+}
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+/* 11) Cards */
+.card {
+  background: white;
+  border: 1px solid #DFDFDF;
+  padding: 4rem;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+}
+.card h3 {
+  font-weight: 400;
+  color: #111111;
+  margin-bottom: 1.6rem;
+}
+.card p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* 12) Doctor card */
+.doctor-card {
+  background: white;
+  border: 1px solid #DFDFDF;
+  padding: 3.2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.doctor-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+}
+.doctor-card h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #111111;
+}
+.doctor-card p {
+  font-size: 1.4rem;
+  color: #666666;
+}
+
+/* 13) Testimonial */
+.testimonial {
+  background: #F9F9F9;
+  padding: 4rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.testimonial p {
+  font-size: 1.6rem;
+  color: #333333;
+  margin-bottom: 2rem;
+}
+.testimonial .author {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.author-avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.author-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.author-info h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #111111;
+}
+.author-info span {
+  font-size: 1.4rem;
+  color: #888888;
+}
+
+/* 14) Pricing table */
+.pricing-table {
+  display: grid;
+  gap: 2rem;
+}
+.pricing-option {
+  background: white;
+  border: 1px solid #DFDFDF;
+  padding: 3rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.pricing-option:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+}
+.pricing-option h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #111111;
+  margin-bottom: 1.6rem;
+}
+.pricing-option p {
+  font-size: 1.4rem;
+  color: #666666;
+  margin-bottom: 2rem;
+}
+.pricing-option .price {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 1.6rem;
+}
+.pricing-option ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+.pricing-option ul li {
+  font-size: 1.4rem;
+  color: #333333;
+  margin-bottom: 0.8rem;
+}
+.pricing-option a {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  background: #111111;
+  color: white;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+.pricing-option a:hover {
+  background: #4A4A4A;
+}
+
+/* 15) Forms */
+input, textarea, select {
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: #111111;
+  border: 1px solid #DFDFDF;
+  border-radius: 4px;
+  padding: 1.2rem;
+  width: 100%;
+  margin-bottom: 1.6rem;
+  transition: border-color 0.3s ease;
+}
+input:focus, textarea:focus, select:focus {
+  border-color: #111111;
+  outline: none;
+}
+textarea {
+  resize: vertical;
+  min-height: 10rem;
+}
+button, .btn {
+  cursor: pointer;
+}
+
+/* 16) Misc */
+.hidden {
+  display: none !important;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* 16.5) Footer */
+.footer {
+  background: #111111;
+  color: rgba(255,255,255,0.7);
+  padding: 4rem 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.footer strong {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+.footer small {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* 17) Animations de transition entre sections */
+.section {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section:not(.visible) {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation des cards au scroll */
+.card, .doctor-card {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card:not(.visible), .doctor-card:not(.visible) {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.card.visible, .doctor-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Délais pour effet cascade */
+.grid .card:nth-child(1) { transition-delay: 0.1s; }
+.grid .card:nth-child(2) { transition-delay: 0.2s; }
+.grid .card:nth-child(3) { transition-delay: 0.3s; }
+.grid .card:nth-child(4) { transition-delay: 0.4s; }
+
+/* Animation du hero au chargement */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-grid > * {
+  animation: fadeInUp 1s ease both;
+}
+
+.hero-grid .kicker {
+  animation-delay: 0.2s;
+}
+
+.hero-grid h1 {
+  animation-delay: 0.4s;
+}
+
+.hero-grid p {
+  animation-delay: 0.6s;
+}
+
+.hero-grid .hero-actions {
+  animation-delay: 0.8s;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Réduire les animations pour ceux qui le préfèrent */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+  
+  .section, .card, .doctor-card {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 2rem 0;
+  }
+  
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    margin-top: 0.5rem;
+  }
+  
+  .nav-item:hover .dropdown {
+    display: block;
+  }
+  
+  .hero h1 {
+    font-size: clamp(3.2rem, 8vw, 5.6rem);
+  }
+  
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
