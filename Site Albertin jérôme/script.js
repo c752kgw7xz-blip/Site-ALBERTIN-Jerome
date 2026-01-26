@@ -16,11 +16,9 @@ window.onload = function() {
 
 window.addEventListener('scroll', function() {
   const header = document.getElementById('header');
-  if (header && window.scrollY > 50) {
-    header.classList.add('header--scrolled');
-  } else if (header) {
-    header.classList.remove('header--scrolled');
-  }
+  if (!header) return;
+
+  header.classList.toggle('header--scrolled', window.scrollY > 50);
 });
 
 const observerOptions = {
@@ -37,7 +35,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 function initAnimations() {
-  const sections = document.querySelectorAll('.section');
+  const sections = document.querySelectorAll('.section:not(.section--soft)');
   sections.forEach(section => {
     observer.observe(section);
   });
