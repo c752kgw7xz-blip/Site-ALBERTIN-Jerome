@@ -114,7 +114,7 @@ Le fichier `netlify.toml` est déjà configuré. Assurez-vous que :
 
 ## 📝 Notes importantes
 
-- **URL du site** : Remplacer `albertin-chirurgien.com` par le vrai domaine
+- **URL du site** : https://docteur-albertin-chirurgien-vasculaire.fr
 - **Images** : Vérifier que `images/chirurgien1.jpg` existe (sans espace)
 - **Téléphone** : Vérifier le numéro +33-4-94-40-74-20
 - **Adresses** : Compléter les adresses exactes dans contact.html
