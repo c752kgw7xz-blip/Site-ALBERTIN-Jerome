@@ -1,96 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Page d'accueil -->
+
   <url>
-    <loc>https://www.albertin-chirurgien.com/</loc>
+    <loc>https://docteur-albertin-chirurgien-vasculaire.fr/</loc>
     <lastmod>2026-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
   </url>
-  
-  <!-- Pages principales -->
+
   <url>
-    <loc>https://www.albertin-chirurgien.com/chirurgien.html</loc>
+    <loc>https://docteur-albertin-chirurgien-vasculaire.fr/chirurgien.html</loc>
     <lastmod>2026-01-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
   </url>
-  
+
   <url>
-    <loc>https://www.albertin-chirurgien.com/pathologies.html</loc>
+    <loc>https://docteur-albertin-chirurgien-vasculaire.fr/pathologies.html</loc>
     <lastmod>2026-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
-  
+
   <url>
-    <loc>https://www.albertin-chirurgien.com/interventions.html</loc>
+    <loc>https://docteur-albertin-chirurgien-vasculaire.fr/interventions.html</loc>
     <lastmod>2026-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
-  
+
   <url>
-    <loc>https://www.albertin-chirurgien.com/expertise-endovasculaire.html</loc>
+    <loc>https://docteur-albertin-chirurgien-vasculaire.fr/expertise-endovasculaire.html</loc>
     <lastmod>2026-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-  
+
   <url>
-    <loc>https://www.albertin-chirurgien.com/contact.html</loc>
+    <loc>https://docteur-albertin-chirurgien-vasculaire.fr/contact.html</loc>
     <lastmod>2026-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-  
+
   <url>
-    <loc>https://www.albertin-chirurgien.com/informations.html</loc>
+    <loc>https://docteur-albertin-chirurgien-vasculaire.fr/informations.html</loc>
     <lastmod>2026-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
-  
-  <!-- Pages pathologies -->
+
   <url>
-    <loc>https://www.albertin-chirurgien.com/pathologies/anevrisme.html</loc>
+    <loc>https://docteur-albertin-chirurgien-vasculaire.fr/pathologies/anevrisme.html</loc>
     <lastmod>2026-01-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
   </url>
-  
+
   <url>
-    <loc>https://www.albertin-chirurgien.com/pathologies/arterite.html</loc>
+    <loc>https://docteur-albertin-chirurgien-vasculaire.fr/pathologies/arterite.html</loc>
     <lastmod>2026-01-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
   </url>
-  
+
   <url>
-    <loc>https://www.albertin-chirurgien.com/pathologies/arterite-diabete.html</loc>
+    <loc>https://docteur-albertin-chirurgien-vasculaire.fr/pathologies/arterite-diabete.html</loc>
     <lastmod>2026-01-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
   </url>
-  
+
   <url>
-    <loc>https://www.albertin-chirurgien.com/pathologies/stenose-carotidienne.html</loc>
+    <loc>https://docteur-albertin-chirurgien-vasculaire.fr/pathologies/stenose-carotidienne.html</loc>
     <lastmod>2026-01-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
   </url>
-  
+
   <url>
-    <loc>https://www.albertin-chirurgien.com/pathologies/varices.html</loc>
+    <loc>https://docteur-albertin-chirurgien-vasculaire.fr/pathologies/varices.html</loc>
     <lastmod>2026-01-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
   </url>
-  
+
   <url>
-    <loc>https://www.albertin-chirurgien.com/pathologies/prevention.html</loc>
+    <loc>https://docteur-albertin-chirurgien-vasculaire.fr/pathologies/prevention.html</loc>
     <lastmod>2026-01-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
   </url>
+
 </urlset>
