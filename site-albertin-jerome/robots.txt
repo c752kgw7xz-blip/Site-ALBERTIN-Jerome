@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://www.albertin-chirurgien.com/sitemap.xml
-
-# Disallow admin or private directories if any
-# User-agent: *
-# Disallow: /admin/
+Sitemap: https://docteur-albertin-chirurgien-vasculaire.fr/sitemap.xml
