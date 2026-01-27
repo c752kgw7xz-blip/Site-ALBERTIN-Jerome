@@ -3,6 +3,7 @@
 ## ⚡ Actions immédiates (jour 1)
 
 ### 1. Google Search Console
+
 - [ ] Créer un compte Google Search Console
 - [ ] Ajouter la propriété du site (domaine)
 - [ ] Vérifier la propriété du site
@@ -13,6 +14,7 @@
 **Lien** : https://search.google.com/search-console
 
 ### 2. Google My Business (profils d'établissement)
+
 - [ ] Créer/revendiquer la fiche pour **Polyclinique Notre Dame - Draguignan**
 - [ ] Créer/revendiquer la fiche pour **Clinique Les Lauriers - Fréjus**
 - [ ] Compléter toutes les informations :
@@ -28,6 +30,7 @@
 **Lien** : https://business.google.com
 
 ### 3. Vérifications techniques
+
 - [ ] Tester le site sur mobile (responsive)
 - [ ] Vérifier que HTTPS est actif
 - [ ] Tester la vitesse de chargement : https://pagespeed.web.dev
@@ -37,6 +40,7 @@
 ## 📊 Actions à court terme (semaine 1-2)
 
 ### 4. Annuaires médicaux et sanitaires
+
 - [ ] Pages Jaunes : https://www.pagesjaunes.fr
 - [ ] Doctolib : vérifier/optimiser le profil
 - [ ] Conseil National de l'Ordre des Médecins
@@ -46,11 +50,13 @@
 - [ ] Médecins d'ici
 
 ### 5. Réseaux sociaux (optionnel)
+
 - [ ] Créer une page Facebook professionnelle
 - [ ] Créer un profil LinkedIn
 - [ ] Poster du contenu informatif régulièrement
 
 ### 6. Optimisation du contenu
+
 - [ ] Ajouter du contenu sur les FAQ
 - [ ] Créer des articles de blog sur les pathologies
 - [ ] Ajouter des témoignages patients (anonymisés)
@@ -59,6 +65,7 @@
 ## 🔍 Actions à moyen terme (mois 1-3)
 
 ### 7. Suivi et analyse
+
 - [ ] Configurer Google Analytics 4
 - [ ] Suivre les positions dans Google Search Console
 - [ ] Analyser les requêtes de recherche
@@ -66,12 +73,14 @@
 - [ ] Suivre les conversions (prises de RDV)
 
 ### 8. Amélioration continue
+
 - [ ] Optimiser les pages peu performantes
 - [ ] Créer du contenu basé sur les recherches réelles
 - [ ] Améliorer les snippets dans les résultats Google
 - [ ] Obtenir des backlinks de qualité (annuaires médicaux, articles)
 
 ### 9. Performances techniques
+
 - [ ] Optimiser toutes les images en WebP
 - [ ] Minifier CSS et JavaScript
 - [ ] Implémenter un CDN (Cloudflare)
@@ -80,6 +89,7 @@
 ## 📱 Optimisations locales
 
 ### 10. SEO Local
+
 - [ ] S'assurer que NAP (Name, Address, Phone) est identique partout
 - [ ] Créer des citations locales (annuaires locaux Var)
 - [ ] Obtenir des avis Google (important !)
@@ -87,7 +97,9 @@
 - [ ] Mentionner les quartiers et villes voisines
 
 ### 11. Mots-clés locaux à cibler
+
 Ajouter du contenu mentionnant :
+
 - "chirurgien vasculaire Draguignan"
 - "chirurgien vasculaire Fréjus"
 - "traitement varices Var"
@@ -98,11 +110,13 @@ Ajouter du contenu mentionnant :
 ## 🔐 Sécurité et maintenance
 
 ### 12. Sécurité
+
 - [ ] Configurer les en-têtes de sécurité (CSP, X-Frame-Options)
 - [ ] Activer HTTPS strict
 - [ ] Configurer les sauvegardes automatiques
 
 ### 13. Maintenance régulière
+
 - [ ] Vérifier les liens cassés (mensuel)
 - [ ] Mettre à jour les informations si changements
 - [ ] Publier du nouveau contenu (1-2 fois/mois)
@@ -111,6 +125,7 @@ Ajouter du contenu mentionnant :
 ## 📈 KPIs à suivre
 
 ### Métriques importantes
+
 - **Positions Google** : suivre le classement des mots-clés principaux
 - **Trafic organique** : visiteurs provenant de Google
 - **Taux de conversion** : % de visiteurs prenant RDV
@@ -120,6 +135,7 @@ Ajouter du contenu mentionnant :
 - **Avis Google** : nombre et note moyenne
 
 ### Objectifs à 3 mois
+
 - [ ] 50+ impressions/jour dans Google
 - [ ] 10+ clics/jour depuis Google
 - [ ] Position moyenne < 20 sur mots-clés principaux
@@ -127,6 +143,7 @@ Ajouter du contenu mentionnant :
 - [ ] 100+ vues du profil Google My Business/mois
 
 ### Objectifs à 6 mois
+
 - [ ] 200+ impressions/jour
 - [ ] 30+ clics/jour
 - [ ] Position moyenne < 10 sur mots-clés principaux
@@ -136,6 +153,7 @@ Ajouter du contenu mentionnant :
 ## 🛠️ Outils utiles
 
 ### Gratuits
+
 - **Google Search Console** : suivi indexation et performances
 - **Google Analytics** : analyse du trafic
 - **Google PageSpeed Insights** : performances
@@ -143,6 +161,7 @@ Ajouter du contenu mentionnant :
 - **AnswerThePublic** : idées de contenu
 
 ### Payants (optionnels)
+
 - **Semrush** ou **Ahrefs** : suivi positions et backlinks
 - **Screaming Frog** : audit technique SEO
 - **Hotjar** : analyse comportement utilisateurs
@@ -150,7 +169,8 @@ Ajouter du contenu mentionnant :
 ## 📝 Checklist de lancement
 
 Avant de partager le site :
-- [x] Toutes les pages sont accessibles
+
+- [X] Toutes les pages sont accessibles
 - [ ] Remplacer "albertin-chirurgien.com" par le vrai domaine partout
 - [ ] Vérifier que l'image `images/chirurgien1.jpg` existe (sans espace)
 - [ ] Compléter les vraies adresses dans contact.html
@@ -158,8 +178,8 @@ Avant de partager le site :
 - [ ] Vérifier les liens Doctolib
 - [ ] Tester le site sur mobile
 - [ ] Tester sur différents navigateurs
-- [x] Vérifier que sitemap.xml est accessible
-- [x] Vérifier que robots.txt est accessible
+- [X] Vérifier que sitemap.xml est accessible
+- [X] Vérifier que robots.txt est accessible
 - [ ] Configurer les redirections si nécessaire
 
 ## 💡 Conseils finaux
@@ -175,12 +195,13 @@ Avant de partager le site :
 ## 📞 Support
 
 Pour toute question technique :
+
 - Consulter [SEO-OPTIMISATIONS.md](SEO-OPTIMISATIONS.md)
 - Exécuter `./check-seo.sh` pour vérifier l'état du SEO
 - Consulter la documentation Google Search Console
 
 ---
 
-**Date** : 27 janvier 2026  
-**Statut** : Optimisations SEO complètes ✅  
+**Date** : 27 janvier 2026
+**Statut** : Optimisations SEO complètes ✅
 **Prochaine étape** : Google Search Console et Google My Business
